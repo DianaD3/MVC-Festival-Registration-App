@@ -1,0 +1,10 @@
+{
+    "token": "pk.eyJ1IjoiZGlhbmFkMyIsImEiOiJjam9qdTVpODUwOGQ2M2xwanBrcnNrczdoIn0.17CYLLGtE45Y3rkNkSCSSA",
+    "mapStyles": {
+      "londonCycle": "mapbox://styles/alex3165/cj2hv9v4y00242slphcyk9oca",
+      "light": "mapbox://styles/mapbox/light-v9",
+      "dark": "mapbox://styles/mapbox/dark-v9",
+      "basic": "mapbox://styles/mapbox/basic-v9",
+      "outdoor": "mapbox://styles/mapbox/outdoors-v10"
+    }
+  }

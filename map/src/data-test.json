@@ -1,0 +1,171 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": 5.9, "description": "earthquake" },
+      "geometry": { "coordinates": [-71.877, -34.228], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.1, "description": "earthquake" },
+      "geometry": { "coordinates": [140.951, 29.645], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.5, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-163.691, 52.611999999999995],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.3, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-73.454, -38.071999999999996],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.9, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-103.05799999999999, -35.949],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.5, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [101.096, -4.053999999999999],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.7, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [154.85399999999998, -6.245],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.2, "description": "earthquake" },
+      "geometry": { "coordinates": [-70.547, -18.058], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.8, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-127.94200000000001, -55.725],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.6, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [127.98200000000001, 3.5589999999999997],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.5, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-129.467, 44.361999999999995],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.9, "description": "earthquake" },
+      "geometry": { "coordinates": [118.259, -8.085], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.7, "description": "earthquake" },
+      "geometry": { "coordinates": [122.485, -0.732], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 7.2, "description": "earthquake" },
+      "geometry": { "coordinates": [96.01799999999999, 3.748], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.7, "description": "earthquake" },
+      "geometry": { "coordinates": [-176.646, -23.59], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.8, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [124.65700000000001, 0.511],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.8, "description": "earthquake" },
+      "geometry": { "coordinates": [-67.07, 18.4], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.0, "description": "earthquake" },
+      "geometry": { "coordinates": [-77.541, -5.083], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.0, "description": "earthquake" },
+      "geometry": { "coordinates": [-135.252, -54.8], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.0, "description": "earthquake" },
+      "geometry": { "coordinates": [-135.398, -54.843], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.6, "description": "earthquake" },
+      "geometry": { "coordinates": [-143.132, -56.87], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.9, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-92.15899999999999, -39.063],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.9, "description": "earthquake" },
+      "geometry": { "coordinates": [-84.302, 9.247], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 5.7, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-139.157, -56.236000000000004],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.1, "description": "earthquake" },
+      "geometry": {
+        "coordinates": [-74.352, -13.927999999999999],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": 6.5, "description": "earthquake" },
+      "geometry": { "coordinates": [-71.558, -8.087], "type": "Point" }
+    }
+  ]
+}
