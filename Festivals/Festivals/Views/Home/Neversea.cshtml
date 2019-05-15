@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Neversea";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untold</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column1 {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+            /* Style the images inside the grid */
+            .column1 img1 {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+                .column1 img1:hover {
+                    opacity: 1;
+                }
+
+        /* Clear floats after the columns */
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container1 {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext1 {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn1 {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="text-align:center">
+        <h2>Tabbed Image Gallery</h2>
+        <p>Click on the images below:</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row1">
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I00000RnWVu2lhfw/fit=2048" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I0000xIv39mT_D8I/fit=2048" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I00007aQ1e.2oy84/fit=2048" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I00003Acst0ZaBOE/fit=2048" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+    <div class="row1">
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I00001ZBVzg9kqpI/fit=2048" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I0000iau8sFXgKu0/fit=2048" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I0000NFhEf_nAa.s/fit=2048" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column1">
+            <img src="http://cdn.c.photoshelter.com/img-get2/I0000H.GSb4fml6Q/fit=2048" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container1">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn1">&times;</span>
+        <img id="expandedImg1" style="width:100%">
+        <div id="imgtext1"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg1");
+            var imgText = document.getElementById("imgtext1");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

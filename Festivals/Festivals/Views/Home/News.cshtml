@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "News";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Information</title>
+    <style>
+        .collapsible {
+            background-color: #D3D3D3;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+            .active, .collapsible:hover {
+                background-color: #BEBEBE;
+            }
+
+            .collapsible:after {
+                content: '\002B';
+                color: black;
+                font-weight: bold;
+                float: right;
+                margin-left: 50px;
+            }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 10,10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        .photo {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .text {
+            margin: 10px;
+        }
+
+        @@media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @@media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Festivals Presentation</h2>
+
+    <button class="collapsible">Untold</button>
+    <div class="content">
+        <img class="photo" src="http://tb.ziareromania.ro/Untold-2019--Cand-vor-fi-puse-in-vanzare-primele-10-000-de-abonamente/c972555e78b9871c19/327/0/1/70/Untold-2019--Cand-vor-fi-puse-in-vanzare-primele-10-000-de-abonamente.jpg">
+        <p class="text">Untold Festival is the largest annual electronic music festival held in Romania, taking place in Cluj-Napoca at Central Park, with the main stage at Cluj Arena. Untold has been designated Best Major Festival within European Festival Awards 2015. Guests include a vast range of European countries, as well as Asia and North America.</p>
+    </div>
+    <button class="collapsible">Neversea</button>
+    <div class="content">
+        <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ6TrHj3NOCskCm3Fl_rGieCer-a1UG-Br0ZOuQ4H_QowVCURVgw">
+        <p class="text">Neversea is an electronic and EDM music festival which it takes place in Costanta on “Modern” Beach of Tomis Port also known as “Neversea” Beach. Last year, artists such as Jason Derulo, Afrojack, Lost Frequencies, Tiesto and many others performed on the main stage but also on the secondary stages of the Neversea music festival.</p>
+    </div>
+    <button class="collapsible">Sunwaves</button>
+    <div class="content">
+        <img class="photo" src="data:image/jpeg;base64,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REQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB//2Q==">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Sunset</button>
+    <div class="content">
+        <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3Q2VgCwp2Ei57ChEPVy9Dq6g-g_Y2ngPce2fadjB0mO5e-w8BA">
+        <p class="text">Untold Festival is the largest annual electronic music festival held in Romania, taking place in Cluj-Napoca at Central Park, with the main stage at Cluj Arena. Untold has been designated Best Major Festival within European Festival Awards 2015. Guests include a vast range of European countries, as well as Asia and North America.</p>
+    </div>
+    <button class="collapsible">Electric Castle</button>
+    <div class="content">
+        <img class="photo" src="https://electriccastle.ro/assets/img/ec-official-logo.jpg">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Summer Well</button>
+    <div class="content">
+        <img class="photo" src="https://static.infomusic.ro/media/2015/01/logo-summer-well-2015.jpg">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Awake</button>
+    <div class="content">
+        <img class="photo" src="http://tb.ziareromania.ro/Organizatorii-unui-festival-din-Romania-ii-rasplatesc-pe-cei-care-voteaza-la-europarlamentare/bc72e55f87838ed1d7/327/0/1/70/Organizatorii-unui-festival-din-Romania-ii-rasplatesc-pe-cei-care-voteaza-la-europarlamentare.jpg">
+        <p class="text">Untold Festival is the largest annual electronic music festival held in Romania, taking place in Cluj-Napoca at Central Park, with the main stage at Cluj Arena. Untold has been designated Best Major Festival within European Festival Awards 2015. Guests include a vast range of European countries, as well as Asia and North America.</p>
+    </div>
+    <button class="collapsible">Afterhills</button>
+    <div class="content">
+        <img class="photo" src="data:image/jpeg;base64,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">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Dakini</button>
+    <div class="content">
+        <img class="photo" src="https://i1.sndcdn.com/artworks-000219918592-7pv4p6-t500x500.jpg">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">El Carrusel</button>
+    <div class="content">
+        <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0kvQjlb83Orxpavf7VoZsNEx7JU1i4gQIQPHRzM545UBBt3q">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

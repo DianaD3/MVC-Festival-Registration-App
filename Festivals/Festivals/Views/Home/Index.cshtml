@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1>Festivals</h1>
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+        <h2>Map</h2>
+        <p>Here you can see where festivals are located</p>
+        <p class="btn btn-default">@Html.ActionLink("Maps", "Maps", "Home")</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Buy Tickets</h2>
+        <p>Here you can buy tickets at festivals</p>
+        <p class="btn btn-default">@Html.ActionLink("Tickets", "Tickets", "Home")</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>More Info</h2>
+        <p>Here you can find additional information about festivals</p>
+        <p class="btn btn-default">@Html.ActionLink("Info", "News", "Home")</p>
+    </div>
+
+</div>

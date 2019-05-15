@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Maps";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+     @@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+    width: 80%;
+    padding: 0;
+    }
+
+    .right {
+    width: 100%;
+    }
+    }
+
+    @@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+    width: 100%;
+    }
+    }
+    </style>
+</head>
+<body>
+
+    <h2>Festival Map</h2>
+
+    <div id="googleMap" style="width:100%;height:530px;">
+
+        <script>
+    var locations = [
+              ['Untold', 46.768334, 23.572767, 1],
+              ['Neversea', 44.178441, 28.656526, 2],
+              ['Sunwaves', 44.267986, 28.620557, 3],
+              ['Sunset', 43.751664, 28.575954, 4],
+              ['Electric Castle', 46.909043, 23.808487, 5],
+              ['Summer Well', 44.562362, 25.941097, 6],
+              ['Awake', 46.669730, 24.645499, 7],
+              ['Afterhills', 47.165817, 27.506554, 8],
+              ['Dakini', 43.999464, 28.662651, 9],
+              ['El Carrusel', 44.476477, 26.065595, 10]
+            ];
+function myMap() {
+var map= {
+    zoom:7,
+  center:new google.maps.LatLng(45.868881, 24.923625),
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+
+var infowindow = new google.maps.InfoWindow();
+var marker, i;
+var map = new google.maps.Map(document.getElementById("googleMap"),map);
+for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map
+                });
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+}
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoc9RHsb95Le_0EqJbOhILK-rMwoF_he8&callback=myMap"></script>
+    </div>
+</body>
+</html>

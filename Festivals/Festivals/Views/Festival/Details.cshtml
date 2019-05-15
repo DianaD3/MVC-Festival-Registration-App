@@ -1,0 +1,75 @@
+﻿@model Festivals.Models.Festival
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Festival</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameFestival)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameFestival)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Locatie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Locatie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Start)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Finish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Finish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desfasurator)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Genre</th>
+                </tr>
+                @foreach (var item in Model.Desfasurator)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Artist.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Artist.Genre)
+                        </td>
+
+                    </tr>
+                }
+            </table>
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FestivalID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
