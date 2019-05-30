@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Buy";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .formular{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formular">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyXJIekJqdl-OEHNhCYJWOSzXANurNbGUxgTcKZqBak8cu6-HS7/exec">
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br>
+            Email:<br>
+            <input type="text" name="email"><br><br>
+            <button>@Html.ActionLink("Confirmation", "Confirmation", "Home")</button>
+        </form>
+        </div>
+    <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+    <div style="display:none;" id="tankyou_message">
+</body>
+</html>
